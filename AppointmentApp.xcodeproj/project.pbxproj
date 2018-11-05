@@ -12,6 +12,8 @@
 		194F0C8C218FD1C500F79D9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194F0C8A218FD1C500F79D9B /* Main.storyboard */; };
 		194F0C8E218FD1C500F79D9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 194F0C8D218FD1C500F79D9B /* Assets.xcassets */; };
 		194F0C91218FD1C500F79D9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194F0C8F218FD1C500F79D9B /* LaunchScreen.storyboard */; };
+		19AC102C21902969001E7FBB /* OHCircleSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AC102B21902969001E7FBB /* OHCircleSegue.swift */; };
+		19AC102E219029AE001E7FBB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AC102D219029AE001E7FBB /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		194F0C8D218FD1C500F79D9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		194F0C90218FD1C500F79D9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		194F0C92218FD1C500F79D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19AC102B21902969001E7FBB /* OHCircleSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OHCircleSegue.swift; sourceTree = "<group>"; };
+		19AC102D219029AE001E7FBB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 			children = (
 				194F0C86218FD1C500F79D9B /* AppDelegate.swift */,
 				194F0C88218FD1C500F79D9B /* ViewController.swift */,
+				19AC102D219029AE001E7FBB /* SignUpViewController.swift */,
 				194F0C8A218FD1C500F79D9B /* Main.storyboard */,
 				194F0C8D218FD1C500F79D9B /* Assets.xcassets */,
 				194F0C8F218FD1C500F79D9B /* LaunchScreen.storyboard */,
+				19AC102B21902969001E7FBB /* OHCircleSegue.swift */,
 				194F0C92218FD1C500F79D9B /* Info.plist */,
 			);
 			path = AppointmentApp;
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				194F0C89218FD1C500F79D9B /* ViewController.swift in Sources */,
+				19AC102C21902969001E7FBB /* OHCircleSegue.swift in Sources */,
+				19AC102E219029AE001E7FBB /* SignUpViewController.swift in Sources */,
 				194F0C87218FD1C500F79D9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
