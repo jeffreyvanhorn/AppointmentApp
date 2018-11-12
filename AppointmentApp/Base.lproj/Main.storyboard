@@ -52,7 +52,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="53"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="kUK-uv-J6L" kind="custom" customClass="OHCircleSegue" customModule="AppointmentApp" customModuleProvider="target" id="d7Q-Z2-K35"/>
+                                    <action selector="loginButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pLb-Ph-ewI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.29999999999999999" translatesAutoresizingMaskIntoConstraints="NO" id="ICl-oq-jVd">
@@ -106,6 +106,7 @@ Appointment</string>
                     <connections>
                         <outlet property="emailTextField" destination="mLT-Lw-coA" id="AUb-ap-hwv"/>
                         <outlet property="passwordTextField" destination="ELm-89-aAq" id="jc4-Vq-g4H"/>
+                        <segue destination="kUK-uv-J6L" kind="show" identifier="loginSegue" customClass="OHCircleSegue" customModule="AppointmentApp" customModuleProvider="target" id="R27-HN-MqT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -263,7 +264,7 @@ Appointment</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fd1-XX-riT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-295" y="487"/>
+            <point key="canvasLocation" x="-66" y="558"/>
         </scene>
     </scenes>
     <resources>
@@ -272,6 +273,6 @@ Appointment</string>
         <image name="settings" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CVZ-Le-mI4"/>
+        <segue reference="R27-HN-MqT"/>
     </inferredMetricsTieBreakers>
 </document>
