@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +36,29 @@ class SignUpViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func signUpUser(_ sender: Any) {
+        guard let email = emailTextField?.text, let password = passwordTextField?.text else{
+            //make an error message show up specific to having and empty field
+            return
+        }
+        
+        //add input validation code
+        
+        //now that we know that the input is valid, create a new user
+        Auth.auth().createUser(withEmail: email, password: password) {
+            user, error in
+                //if there is not an error then we want to sing in the user
+            if error == nil{
+                Auth.auth().signIn(withEmail: email, password: password)
+            }
+        }
+    }
 }
+
+
+
+
+
+
+
+

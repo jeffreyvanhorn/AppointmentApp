@@ -154,6 +154,7 @@ Appointment</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="53"/>
                                 </variation>
                                 <connections>
+                                    <action selector="signUpUser:" destination="be1-46-jmT" eventType="touchUpInside" id="Rlt-BO-nvx"/>
                                     <segue destination="kUK-uv-J6L" kind="custom" customClass="OHCircleSegue" customModule="AppointmentApp" customModuleProvider="target" id="CVZ-Le-mI4"/>
                                 </connections>
                             </button>
@@ -187,6 +188,10 @@ Appointment</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cEj-Se-7V4"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="C7z-ez-ziX" id="GD1-Am-Vrn"/>
+                        <outlet property="passwordTextField" destination="TXv-0r-Geb" id="QOX-3k-jWi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJZ-vX-3zt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
